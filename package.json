@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/create-vue-yf.git"
+    "url": "https://github.com/yunfengnobug/create-vue-yf.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/create-vue-yf/issues"
+    "url": "https://github.com/yunfengnobug/create-vue-yf/issues"
   },
-  "homepage": "https://github.com/your-username/create-vue-yf#readme"
+  "homepage": "https://github.com/yunfengnobug/create-vue-yf#readme"
 }

@@ -104,6 +104,12 @@ pnpm format
 
 ```
 my-vue-app/
+├── .husky/             # Git hooks
+│   └── pre-commit      # 提交前执行 lint 和格式化
+├── .vscode/            # VS Code 编辑器配置
+│   ├── extensions.json # 推荐扩展
+│   ├── settings.json   # 编辑器设置
+│   └── vue3.2.code-snippets  # Vue3 代码片段
 ├── build/              # 构建工具
 │   └── utils.ts        # Vite 配置工具函数
 ├── public/             # 静态资源
@@ -122,16 +128,20 @@ my-vue-app/
 │   │   ├── dayjs.ts    # 日期处理
 │   │   └── request.ts  # Axios 封装
 │   ├── views/          # 页面组件
-│   │   └── layout/
-│   │       └── index.vue
 │   ├── App.vue         # 根组件
 │   └── main.ts         # 入口文件
 ├── .env                # 通用环境变量
 ├── .env.development    # 开发环境变量
 ├── .env.production     # 生产环境变量
+├── .npmrc              # npm 配置
+├── .oxfmtrc.json       # oxfmt 格式化配置
+├── .oxlintrc.json      # oxlint 检查配置
+├── env.d.ts            # 环境变量类型声明
 ├── index.html          # HTML 模板
 ├── package.json
 ├── tsconfig.json       # TypeScript 配置
+├── tsconfig.app.json   # 应用 TS 配置
+├── tsconfig.node.json  # Node TS 配置
 └── vite.config.ts      # Vite 配置
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "create-vue-yf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 Vue3 + TypeScript + Vite 的前端脚手架工具",
   "type": "module",
   "author": "王俊杰 <1768669274@qq.com>",

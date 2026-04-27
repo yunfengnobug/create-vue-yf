@@ -2,23 +2,30 @@
   "name": "create-vue-yf",
   "version": "1.1.0",
   "description": "基于 Vue3 + TypeScript + Vite 的前端脚手架工具",
-  "type": "module",
-  "author": "王俊杰 <1768669274@qq.com>",
-  "license": "MIT",
   "keywords": [
-    "vue3",
-    "vue",
-    "typescript",
-    "vite",
-    "pinia",
-    "scaffold",
-    "template",
+    "boilerplate",
     "cli",
     "create-app",
+    "pinia",
+    "scaffold",
     "starter",
-    "boilerplate",
+    "template",
+    "typescript",
+    "vite",
+    "vue",
+    "vue3",
     "前端框架"
   ],
+  "homepage": "https://github.com/yunfengnobug/create-vue-yf#readme",
+  "bugs": {
+    "url": "https://github.com/yunfengnobug/create-vue-yf/issues"
+  },
+  "license": "MIT",
+  "author": "王俊杰 <1768669274@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yunfengnobug/create-vue-yf.git"
+  },
   "bin": {
     "create-vue-yf": "bin/index.js"
   },
@@ -27,30 +34,27 @@
     "src",
     "template"
   ],
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
+  "type": "module",
   "scripts": {
     "dev": "node bin/index.js",
     "build": "echo 'No build step required'",
     "test": "node bin/index.js test-project",
-    "prepublishOnly": "echo '准备发布到 npm...'"
+    "prepublishOnly": "echo '准备发布到 npm...'",
+    "format": "oxfmt --write template/src/",
+    "lint": "oxlint --fix template/src/"
   },
   "dependencies": {
-    "prompts": "^2.4.2",
     "kolorist": "^1.8.0",
-    "minimist": "^1.2.8"
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@types/minimist": "^1.2.5",
-    "@types/prompts": "^2.4.9"
+    "@types/prompts": "^2.4.9",
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yunfengnobug/create-vue-yf.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yunfengnobug/create-vue-yf/issues"
-  },
-  "homepage": "https://github.com/yunfengnobug/create-vue-yf#readme"
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
 }

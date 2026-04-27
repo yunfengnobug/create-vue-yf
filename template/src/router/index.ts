@@ -1,4 +1,9 @@
-import { createRouter, createWebHashHistory, createWebHistory, type RouterHistory } from 'vue-router'
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+  type RouterHistory,
+} from 'vue-router'
 
 let history: RouterHistory
 if (import.meta.env.VITE_PATH_MODE === 'hash') {

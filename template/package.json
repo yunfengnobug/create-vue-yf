@@ -10,8 +10,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "report": "rimraf dist && cross-env ANALYZE=true vite build",
-    "format": "oxfmt --write src/",
-    "lint": "oxlint --fix src/",
+    "format": "oxfmt --write .",
+    "lint": "oxlint --fix .",
     "prepare": "husky"
   },
   "dependencies": {
@@ -44,8 +44,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue,css,scss,json,jsonc}": [
-      "oxfmt src/",
-      "oxlint src/"
+      "oxfmt .",
+      "oxlint ."
     ]
   },
   "engines": {
